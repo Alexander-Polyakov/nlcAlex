@@ -1,88 +1,88 @@
 /*
-Error: Undefined mixin 'sprite'.
-        on line 215 of D:/dev/nlc/app/sass/responsive.sass, in `sprite'
-        from line 215 of D:/dev/nlc/app/sass/responsive.sass
+Error: Undefined mixin 'rotate'.
+        on line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass, in `rotate'
+        from line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass
 
-210: 	.section-grid__item
-211: 		margin-bottom: 80px
-212: 		&:last-child
-213: 			margin-bottom: 0
-214: 		&::before
-215: 			+sprite(icon-narrow-bottom)
-216: 			top: 110%
-217: 			right: 45%
-218: 
-219: 	.main-slider__content
-220: 		padding: 31px 15px
+406:         &:after
+407:             right: auto
+408:             left: 50%
+409:             margin-left: -15px
+410:             top: 100%
+411:             +rotate(90)
+412:             margin-top: 20px
+413: 
+414:     .main-slider__slide
+415:         background-position: 0 0
+416: 
 
 Backtrace:
-D:/dev/nlc/app/sass/responsive.sass:215:in `sprite'
-D:/dev/nlc/app/sass/responsive.sass:215
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+E:/Storm Projects/nlcAlex/app/sass/responsive.sass:411:in `rotate'
+E:/Storm Projects/nlcAlex/app/sass/responsive.sass:411
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `with_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:281:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
@@ -97,4 +97,4 @@ C:/Ruby23-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'sprite'.\A         on line 215 of D:/dev/nlc/app/sass/responsive.sass, in `sprite'\A         from line 215 of D:/dev/nlc/app/sass/responsive.sass\A \A 210: 	.section-grid__item\A 211: 		margin-bottom: 80px\A 212: 		&:last-child\A 213: 			margin-bottom: 0\A 214: 		&::before\A 215: 			+sprite(icon-narrow-bottom)\A 216: 			top: 110%\A 217: 			right: 45%\A 218: \A 219: 	.main-slider__content\A 220: 		padding: 31px 15px"; }
+  content: "Error: Undefined mixin 'rotate'.\A         on line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass, in `rotate'\A         from line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass\A \A 406:         &:after\A 407:             right: auto\A 408:             left: 50%\A 409:             margin-left: -15px\A 410:             top: 100%\A 411:             +rotate(90)\A 412:             margin-top: 20px\A 413: \A 414:     .main-slider__slide\A 415:         background-position: 0 0\A 416: "; }

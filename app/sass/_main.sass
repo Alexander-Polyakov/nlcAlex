@@ -308,6 +308,7 @@ button
     position: relative
     -webkit-background-size: cover
     background-size: cover
+    background-position: center
 
 .section
     padding: 70px 0
@@ -315,9 +316,6 @@ button
 
 .section_grey
     background-color: #f6f6f6
-
-.section_taupe
-    background-color: #444444
 
 .section_pb_0
     padding-bottom: 0
@@ -448,20 +446,19 @@ button
     justify-content: space-between
 
 .section-grid__item
-    width: 355px
+    width: 33.3%
+    text-align: center
+    padding: 0 30px
     position: relative
-    &::before
+    &:after
         +sprite(icon-narrow-right)
         content: ''
         position: absolute
         top: 50px
-        right: -30px
+        right: -20px
     &:last-child
-        &::before
+        &:after
             display: none
-
-.section-grid__text
-    text-align: center
 
 .section-grid__icon
     display: flex
@@ -484,7 +481,6 @@ button
     font-family: "PT Sans", sans-serif
     font-size: 19px
     line-height: 1.5em
-    padding: 0 30px
 
 .section-form
     position: relative
@@ -619,29 +615,6 @@ button
     text-align: center
     margin-bottom: 55px
 
-.review-slider
-    .owl-dots
-        position: absolute
-        width: 100%
-        left: 0
-        text-align: center
-    .owl-dot
-        display: inline-block
-        vertical-align: middle
-        margin: 0 4px
-        width: 13px
-        height: 13px
-        border-radius: 50%
-        +trans()
-        background-color: #fff
-        border: 3px solid #fff
-        &:hover
-            background-color: #1bb603
-            border-color: #fff
-        &.active
-            background-color: #1bb603
-            border-color: #1bb603
-
 .review-slider__content
     position: relative
     padding-left: 200px
@@ -765,7 +738,7 @@ button
     height: 134px
     object-fit: cover
     position: relative
-    transition: transform 0.3s
+    transition: transform 2s
 
 .news-item-desc
     min-height: 134px
@@ -797,15 +770,14 @@ button
 
 .faq-grid__item
     width: 45%
-    padding-bottom: 40px
+    margin-bottom: 40px
 
-.faq-item-desc__title
+.faq-item__title
     font-size: 19px
     font-family: "PT Sans Bold"
-    line-height: 1.7em
-    margin-bottom: 5px
+    margin-bottom: 10px
 
-.faq-item-desc__text
+.faq-item__text
     font-size: 18px
     line-height: 1.7em
 
@@ -827,23 +799,21 @@ button
     display: flex
     justify-content: space-between
 
-.social__instagram
-    width: 785px
-    margin-bottom: -40px
-
 .social__facebook
-    width: 310px
+    flex-basis: 300px
+    flex-shrink: 0
+    margin-left: 8%
 
 .instagram-grid
     display: flex
     flex-wrap: wrap
     justify-content: space-between
     width: 100%
+    margin-bottom: -40px
 
 .instagram-grid__item
-    width: 45%
+    width: 47%
     margin-bottom: 40px
-    text-decoration: none
 
 .social__title
     font-family: "PT Sans Narrow Bold", sans-serif
@@ -866,21 +836,15 @@ button
 
 
 .instagram-item__image-wrap
-    position: relative
-    max-width: 346px
-    max-height: 253px
+    height: 260px
     overflow: hidden
     margin-bottom: 10px
-    width: 100%
 
 .instagram-item__image
     transition: all 2s ease 0s
-    max-width: 346px
-    max-height: 253px
     width: 100%
-
-.instagram-item__text
-    max-width: 346px
+    height: 260px
+    object-fit: cover
 
 .instagram-item__title
     font-family: "PT Sans Bold", sans-serif
@@ -895,14 +859,18 @@ button
 
 .instagram-item__preview
     font-size: 18px
-    line-height: 1.7em
+    line-height: 1.5em
 
 .facebook__item
-    align-self: center
+    text-align: center
 
 .facebook__image
-    max-width: 308px
     width: 100%
+    max-width: 300px
+
+.footer
+    background-color: #444
+    padding: 50px 0
 
 .footer-grid
     display: flex

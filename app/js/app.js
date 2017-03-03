@@ -261,6 +261,7 @@
         $('.main-slider').owlCarousel({
             loop: true,
             items: 1,
+            autoHeight: true,
             dots: 1,
             responsive : {
                 0 : {
@@ -274,31 +275,31 @@
         });
 
         $('.review-slider').owlCarousel({
-            nav: true,
             loop: true,
             items: 1,
-            dots: 1,
             responsive : {
                 0 : {
-                    nav: false
+                    nav: false,
+                    dots: true
                 },
-                900 : {
-                    nav: true
+                767 : {
+                    nav: true,
+                    dots: false
                 }
             }
         });
 
         $('.say-about').owlCarousel({
-            nav: true,
             loop: true,
             items: 1,
-            dots: 1,
             responsive : {
-                0: {
-                    nav: false
+                0 : {
+                    nav: false,
+                    dots: true
                 },
-                900: {
-                    nav: true
+                767 : {
+                    nav: true,
+                    dots: false
                 }
             }
         });
