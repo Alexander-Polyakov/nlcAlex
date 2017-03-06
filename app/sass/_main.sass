@@ -34,9 +34,6 @@ strong, b
 .fz20
     font-size: 20px
 
-.fz25
-    font-size: 25px
-
 .fz30
     font-size: 30px
 
@@ -1022,10 +1019,17 @@ button
         margin-bottom: 0
 
 .section-contacts__link
+    font-size: 35px
     text-decoration: none
+    &:hover
+        text-decoration: underline
+
+.section-contacts__link_fz25
+    font-size: 25px
 
 .section-contacts__text
     font-family: "PT Sans Bold"
+    font-size: 20px
 
 .mission
     padding-left: 400px
@@ -1102,7 +1106,7 @@ button
 .jspDrag
     background-color: #fe595f
 
-.news-grid__wrapper
+.section_news
     margin-bottom: 35px
 
 .pagination
@@ -1124,6 +1128,7 @@ button
     padding: 7px 0
     cursor: pointer
     transition: all 0.2s
+    text-decoration: none
     &:hover
         background-color: #e3f7ff
 
@@ -1135,6 +1140,12 @@ button
 
 .pagination__next, .pagination__prev
     width: 15%
+
+.pagination__next
+    border-left: none
+
+.pagination_inactive
+    color: #cac9c9
 
 .footer-grid
     display: flex
