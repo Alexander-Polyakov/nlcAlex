@@ -20,6 +20,7 @@ h2
     margin-bottom: 30px
     font-size: 30px
 
+
 strong, b
     font-family: "PT Sans Bold", sans-serif
     font-weight: normal
@@ -721,6 +722,11 @@ button
             -o-transform: scale(1.2)
             transform: scale(1.2)
 
+.news-grid__item_blog-page
+    width: 100%
+    display: flex
+    align-items: center
+
 .news-item__image-wrap
     position: absolute
     overflow: hidden
@@ -747,6 +753,14 @@ button
     text-decoration: none
     color: #333333
     font-size: 18px
+    line-height: 1.7em
+    margin-bottom: 10px
+
+.news-item-desc__title
+    font-family: "PT Sans Narrow Bold"
+    text-decoration: none
+    color: #333333
+    font-size: 25px
     line-height: 1.7em
     margin-bottom: 10px
 
@@ -1167,11 +1181,42 @@ button
             position: absolute
             left: 0
 
-
-
-
 .jspTrack
     background-color: #ffa6a9
 
 .jspDrag
     background-color: #fe595f
+
+.news-grid__wrapper
+    margin-bottom: 35px
+
+.pagination
+    display: flex
+    max-width: 465px
+    margin: 0 auto
+    font-family: "PT Sans Narrow Bold"
+    font-size: 15px
+    flex-wrap: wrap
+
+.pagination__items
+    width: 70%
+    display: flex
+
+.pagination-items__item, .pagination__next, .pagination__prev
+    text-align: center
+    border: 1px solid #cac9c9
+    height: 35px
+    padding: 7px 0
+    cursor: pointer
+    transition: all 0.2s
+    &:hover
+        background-color: #e3f7ff
+
+
+.pagination-items__item
+    width: 12.5%
+    border-left: none
+
+
+.pagination__next, .pagination__prev
+    width: 15%

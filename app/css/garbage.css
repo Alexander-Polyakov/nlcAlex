@@ -1,23 +1,23 @@
 /*
-Error: Undefined mixin 'rotate'.
-        on line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass, in `rotate'
-        from line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass
+Error: Undefined mixin 'trans'.
+        on line 15 of E:/Storm Projects/nlcAlex/app/sass/garbage.sass, in `trans'
+        from line 15 of E:/Storm Projects/nlcAlex/app/sass/garbage.sass
 
-406:         &:after
-407:             right: auto
-408:             left: 50%
-409:             margin-left: -15px
-410:             top: 100%
-411:             +rotate(90)
-412:             margin-top: 20px
-413: 
-414:     .main-slider__slide
-415:         background-position: 0 0
-416: 
+10:     vertical-align: middle
+11:     margin: 0 4px
+12:     width: 13px
+13:     height: 13px
+14:     border-radius: 50%
+15:     +trans()
+16:     background-color: #fff
+17:     border: 3px solid #fff
+18:     &:hover
+19:       background-color: #1bb603
+20:       border-color: #fff
 
 Backtrace:
-E:/Storm Projects/nlcAlex/app/sass/responsive.sass:411:in `rotate'
-E:/Storm Projects/nlcAlex/app/sass/responsive.sass:411
+E:/Storm Projects/nlcAlex/app/sass/garbage.sass:15:in `trans'
+E:/Storm Projects/nlcAlex/app/sass/garbage.sass:15
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:98:in `block in with_mixin'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
@@ -58,20 +58,6 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perfor
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:515:in `visit_media'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
@@ -97,4 +83,4 @@ C:/Ruby23-x64/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'rotate'.\A         on line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass, in `rotate'\A         from line 411 of E:/Storm Projects/nlcAlex/app/sass/responsive.sass\A \A 406:         &:after\A 407:             right: auto\A 408:             left: 50%\A 409:             margin-left: -15px\A 410:             top: 100%\A 411:             +rotate(90)\A 412:             margin-top: 20px\A 413: \A 414:     .main-slider__slide\A 415:         background-position: 0 0\A 416: "; }
+  content: "Error: Undefined mixin 'trans'.\A         on line 15 of E:/Storm Projects/nlcAlex/app/sass/garbage.sass, in `trans'\A         from line 15 of E:/Storm Projects/nlcAlex/app/sass/garbage.sass\A \A 10:     vertical-align: middle\A 11:     margin: 0 4px\A 12:     width: 13px\A 13:     height: 13px\A 14:     border-radius: 50%\A 15:     +trans()\A 16:     background-color: #fff\A 17:     border: 3px solid #fff\A 18:     &:hover\A 19:       background-color: #1bb603\A 20:       border-color: #fff"; }
