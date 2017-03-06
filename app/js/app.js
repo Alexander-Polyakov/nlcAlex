@@ -331,18 +331,28 @@
                 allContent = accordion.find('.js-accordion-content'),
                 thisContent = thisItem.find(".js-accordion-content"),
                 tableScroll = thisContent.find('.table-scroll'),
+                jspScrollable = allContent.find(".jspScrollable"),
                 jsScroll = tableScroll.find('.js-scroll'),
                 delay = 400;
+
+            if (jspScrollable.length) {
+                setTimeout(function () {
+                    jspScrollable.data().jsp.destroy();
+                }, delay);
+
+            }
+            if(tableScroll.length) {
+                setTimeout(function () {
+                    jsScroll.jScrollPane({autoReinitialise: true});
+
+                    var needHeight =  thisContent.find('table').outerHeight() + 20;
+                    tableScroll.find(".jspContainer").css('height', needHeight);
+                }, delay);
+            }
 
             if (thisItem.hasClass('open')) {
                 allContent.stop().slideUp(delay);
                 thisItem.removeClass("open");
-                console.log(accordion);
-                if(tableScroll.length > 0) {
-                    setTimeout(function () {
-                        jsScroll.data().jsp.destroy();
-                    }, delay);
-                }
             } else {
                 allContent.stop().slideUp(delay);
                 thisContent.stop().slideDown(delay);
@@ -355,13 +365,6 @@
                         scrollTop: itemOffsetTop
                     }, 300);
                 },delay);
-
-                if(tableScroll .length > 0) {
-                    setTimeout(function () {
-                        tableScroll.css('height', thisContent.find('table').outerHeight());
-                        jsScroll.jScrollPane({autoReinitialise: true});
-                    }, delay);
-                }
             }
         });
     });
