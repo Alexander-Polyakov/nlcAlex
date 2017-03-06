@@ -1712,6 +1712,25 @@ button {
   margin-bottom: 0;
 }
 
+.footer-soc__header {
+  margin-bottom: 20px;
+}
+
+.soc-list {
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.soc-list__item {
+  margin-right: 15px;
+}
+.soc-list__item:last-child {
+  margin-right: 0;
+}
+
 button.accordion {
   background-color: #eee;
   color: #444;
@@ -1749,7 +1768,7 @@ button.accordion.active, button.accordion:hover {
 
 .table-scroll {
   width: 100%;
-  overflow-y: visible;
+  overflow-y: hidden;
   margin-bottom: 20px;
   padding-bottom: 15px;
 }
@@ -2764,6 +2783,25 @@ button.accordion.active, button.accordion:hover {
   .custom-ol-list h2 {
     font-size: 18px;
   }
+
+  .footer-grid__info {
+    margin-bottom: 30px;
+  }
+
+  .footer-grid__info {
+    width: 100%;
+    text-align: center;
+  }
+
+  .phone-flex {
+    display: block;
+  }
+
+  .footer-grid__nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
 }
 @media screen and (max-width: 600px) {
   .instagram-grid {
@@ -2797,7 +2835,7 @@ button.accordion.active, button.accordion:hover {
   .section-grid__item:after {
     right: auto;
     left: 50%;
-    margin-left: -15px;
+    margin-left: -20px;
     top: 100%;
     transform: rotate(90deg);
     filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');

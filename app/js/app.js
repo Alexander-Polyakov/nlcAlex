@@ -357,13 +357,13 @@
                 }
             }
         });
-
         $('.js-accordion-item').click(function (e) {
-           var item = $(this);
-
-            $('html, body').animate({
-               scrollTop: item.offset().top
-            }, 600);
+            var item = $(this);
+            setTimeout(function () {
+                $('html, body').animate({
+                    scrollTop: item.offset().top
+                }, 300);
+            }, 400);
         });
     });
 })();
