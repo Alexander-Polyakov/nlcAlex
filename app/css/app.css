@@ -1062,6 +1062,14 @@ button {
   justify-content: space-between;
   margin-bottom: -45px;
 }
+.news-grid .news-grid_blog {
+  width: 100%;
+  max-width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
 .news-grid__item {
   width: 45%;
@@ -1073,14 +1081,6 @@ button {
 }
 .news-item:hover .news-item__image {
   transform: scale(1.2);
-}
-
-.news-grid__item_blog-page {
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
 .news-item__image-wrap {
