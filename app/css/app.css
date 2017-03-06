@@ -150,6 +150,9 @@ body {
 a {
   color: inherit;
 }
+a:hover {
+  text-decoration: none;
+}
 
 .site-wrapper {
   width: 100%;
@@ -1273,96 +1276,8 @@ button {
 .footer {
   background-color: #444;
   padding: 50px 0;
-}
-
-.footer-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.footer-grid__wrapper-left {
-  max-width: 785px;
-  width: 100%;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.footer-grid__wrapper-right {
-  max-width: 310px;
-  width: 100%;
-}
-
-.footer-item {
   font-size: 16px;
-  line-height: 1.7em;
-}
-
-.footer-item__list {
-  float: right;
-  list-style-type: none;
-}
-
-.footer-grid__item-address {
-  color: #FFFFFF;
-  width: 50%;
-}
-
-.footer-grid__item-links {
-  color: #FFFFFF;
-  width: 50%;
-}
-
-.footer-grid__item-social {
-  color: #FFFFFF;
-  width: 100%;
-}
-
-.footer-item-phones-grid {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  width: 90%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
-.footer-item-phones-grid__phone-title {
-  width: 30%;
-}
-
-.footer-item-phones-grid__phones {
-  width: 70%;
-}
-
-.footer-item-phones__text {
-  float: left;
-  line-height: 1.7em;
-}
-
-.footer-item-phone__numbers {
-  padding-left: 80px;
-  line-height: 1.7em;
-}
-
-.footer-item__social {
-  text-align: center;
-  line-height: 1.7em;
-}
-
-.footer-item__social-icons {
-  margin: 0 5px;
-}
-
-.footer-item__wrapper {
-  line-height: 1.7em;
-  margin-bottom: 25px;
+  color: #fff;
 }
 
 .button__banner {
@@ -1741,6 +1656,60 @@ button {
 
 .pagination__next, .pagination__prev {
   width: 15%;
+}
+
+.footer-grid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.footer-grid__info {
+  width: 250px;
+}
+
+.footer-grid__nav {
+  width: 260px;
+}
+
+.footer-info__item {
+  margin-bottom: 5px;
+}
+.footer-info__item:last-child {
+  margin-bottom: 0;
+}
+
+.footer-info__main {
+  margin-bottom: 20px;
+}
+
+.footer-info__conf {
+  font-size: 15px;
+}
+
+.phone-flex {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.phone-flex__left {
+  margin-right: 10px;
+}
+
+.footer-nav {
+  list-style: none;
+}
+
+.footer-nav {
+  font-size: 15px;
+}
+
+.footer-nav__item {
+  margin-bottom: 11px;
+}
+.footer-nav__item:last-child {
+  margin-bottom: 0;
 }
 
 button.accordion {

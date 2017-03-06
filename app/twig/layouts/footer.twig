@@ -56,49 +56,64 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-grid">
-            <div class="footer-grid__wrapper-left">
-                <div class="footer-grid__item-address footer-item">
-                    <div class="footer-item__wrapper">
-                        <p>Головной офис: г. Алматы, <br>ул. Немировича-данченко, д. 49</p>
-                        <div class="footer-item-phones-grid">
-                            <p class="footer-item-phones-grid__phone-title">
-                                Телефоны:</p>
-                            <p class="footer-item-phones-grid__phones">
-                                +7 777 0000 789,<br>
-                                +7 777 7077 775
-                            </p>
+            <div class="footer-grid__info footer-info">
+                <div class="footer-info__main">
+                    <p class="footer-info__item">Головной офис: г. Алматы, ул. Немировича-данченко, д. 49</p>
+                    <div class="footer-info__item phone-flex">
+                        <div class="phone-flex__left">Телефон:</div>
+                        <div>
+                            <p><a href="tel:+7 777 0000 789">+7 777 0000 789</a>,</p>
+                            <p><a href="tel:+7 777 707 777 75">+7 777 707 777 75</a></p>
                         </div>
-                        <p>E-mail: <a href="mailto:nlc.info.kz@gmail.com">nlc.info.kz@gmail.com</a></p>
-                        <p>© 2017 «New Life Company»</p>
                     </div>
-                    <a href="#">Соглашение о конфиденциальности</a>
+                    <p class="footer-info__item">E-mail: nlc.info.kz@gmail.com</p>
+                    <p class="footer-info__item">© 2017 «New Life Company»</p>
                 </div>
-                <div class="footer-grid__item-links footer-item">
-                    <ul class="footer-item__list">
-                        <li><a href="#">Лечение в Южной Корее</a></li>
-                        <li><a href="#">Диагностика в Южной Корее</a></li>
-                        <li><a href="#">Отзывы о нас</a></li>
-                        <li><a href="#">Проживание и питание в Южной Корее</a></li>
-                        <li><a href="#">Контактная информация</a></li>
-                        <li><a href="#">Получить второе мнение</a></li>
-                    </ul>
-                </div>
+                <p class="footer-info__conf"><a href="#">Соглашение о конфиденциальности</a></p>
             </div>
-            <div class="footer-grid__wrapper-right">
-                <div class="footer-grid__item-social footer-item">
-                    <div class="footer-item__social">
-                        <p>Мы в социальных сетях</p>
-                        <a class="footer-item__social-icons" href="#"><i class="fri fri_icon-facebook"></i></a>
-                        <a class="footer-item__social-icons" href="#"><i class="fri fri_icon-instagram"></i></a>
-                    </div>
-                </div>
+            <ul class="footer-grid__nav footer-nav">
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Лечение в Южной Корее</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Диагностика в Южной Корее</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Отзывы о нас</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Проживание и питание в Южной Корее</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Контактная информация</a>
+                </li>
+                <li class="footer-nav__item">
+                    <a class="footer-nav__link" href="#">Получить второе мнение</a>
+                </li>
+            </ul>
+            <div class="footer-grid__soc footer-soc">
+                <div class="footer-soc__header"></div>
+                <ul class="footer-soc__content soc-list">
+                    <li class="soc-list__item">
+                        <a class="soc-list__link" href="#">
+                            <i class="fri fri_icon-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="soc-list__item">
+                        <a class="soc-list__link" href="#">
+                            <i class="fri fri_icon-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
 </footer>
 
-
 <div class="desktop-hide js-mobile-menu mobile-menu">
+    <div class="mobile-menu__header">
+        <a class="js-menu-close mobile-menu__close close-button" href="#"></a>
+    </div>
     <ul class="main-menu">
         <li class="js-dropmenu-item main-menu__item">
             <a class="js-dropmenu-button main-menu__link" href="#">Лечение</a>

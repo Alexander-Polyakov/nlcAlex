@@ -309,7 +309,7 @@
             $(".js-overlay").addClass("open");
         });
 
-        $(".js-overlay").click(function(){
+        $(".js-overlay, .js-menu-close").click(function(){
             $(".js-mobile-menu").removeClass("open");
             $(".js-overlay").removeClass("open");
         });

@@ -5,6 +5,8 @@ body
 
 a
     color: inherit
+    &:hover
+        text-decoration: none
 
 .site-wrapper
     width: 100%
@@ -124,15 +126,9 @@ button
 .main-header__logo
     flex-basis: 286px
 
-.logo__link
-    height: 100%
-    display: inline-block
-    font-size: 0
-    line-height: 0
-
-.logo__img
-    font-size: 0
-    line-height: 0
+.logo__image
+    max-width: 100%
+    height: auto
 
 .main-header__contacts
     text-align: center
@@ -191,7 +187,7 @@ button
 
 .main-menu__item
     position: relative
-
+    border-bottom: 1px solid #eee
 
 .main-menu__item_dropmenu
     &:hover
@@ -242,6 +238,33 @@ button
     &:hover
         text-decoration: underline
 
+
+.main-slider, .owl-carousel
+    .owl-dots
+        font-size: 0
+        line-height: 0
+        position: absolute
+        width: 100%
+        left: 0
+        bottom: 0
+        text-align: center
+    .owl-dot
+        display: inline-block
+        vertical-align: middle
+        margin: 0 4px
+        width: 13px
+        height: 13px
+        border-radius: 50%
+        +trans()
+        background-color: #fff
+        border: 3px solid #fff
+        &:hover
+            background-color: #1bb603
+            border-color: #fff
+        &.active
+            background-color: #1bb603
+            border-color: #1bb603
+
 .main-slider
     padding: 0 !important
     .owl-prev, .owl-next
@@ -262,27 +285,7 @@ button
         right: 75px !important
         +rotate(180)
     .owl-dots
-        position: absolute
-        width: 100%
-        left: 0
         bottom: 20px
-        text-align: center
-    .owl-dot
-        display: inline-block
-        vertical-align: middle
-        margin: 0 4px
-        width: 13px
-        height: 13px
-        border-radius: 50%
-        +trans()
-        background-color: #fff
-        border: 3px solid #fff
-        &:hover
-            background-color: #1bb603
-            border-color: #fff
-        &.active
-            background-color: #1bb603
-            border-color: #1bb603
 
 .main-slider__content
     position: static
@@ -665,28 +668,6 @@ button
     font-size: 18px
     line-height: 1.7em
 
-.say-about
-    .owl-dots
-        position: absolute
-        width: 100%
-        left: 0
-        text-align: center
-    .owl-dot
-        display: inline-block
-        vertical-align: middle
-        margin: 0 4px
-        width: 13px
-        height: 13px
-        border-radius: 50%
-        +trans()
-        background-color: #fff
-        border: 3px solid #fff
-        &:hover
-            background-color: #1bb603
-            border-color: #fff
-        &.active
-            background-color: #1bb603
-            border-color: #1bb603
 
 .say-about-grid
     display: flex
@@ -700,7 +681,6 @@ button
 
 .say-about-grid__image
     width: 100% !important
-
 
 .news-grid
     display: flex
@@ -816,7 +796,7 @@ button
 .social__facebook
     flex-basis: 300px
     flex-shrink: 0
-    margin-left: 8%
+    margin-left: 6%
 
 .instagram-grid
     display: flex
@@ -838,8 +818,6 @@ button
 
 .instagram-item
     text-decoration: none
-    display: flex
-    flex-direction: column
     &:hover
         .instagram-item__image
             -webkit-transform: scale(1.2)
@@ -885,72 +863,9 @@ button
 .footer
     background-color: #444
     padding: 50px 0
-
-.footer-grid
-    display: flex
-    justify-content: space-between
-    flex-wrap: wrap
-
-.footer-grid__wrapper-left
-    max-width: 785px
-    width: 100%
-    display: flex
-    justify-content: space-between
-
-.footer-grid__wrapper-right
-    max-width: 310px
-    width: 100%
-
-.footer-item
     font-size: 16px
-    line-height: 1.7em
+    color: #fff
 
-.footer-item__list
-    float: right
-    list-style-type: none
-
-.footer-grid__item-address
-    color: #FFFFFF
-    width: 50%
-
-.footer-grid__item-links
-    color: #FFFFFF
-    width: 50%
-
-.footer-grid__item-social
-    color: #FFFFFF
-    width: 100%
-
-.footer-item-phones-grid
-    display: flex
-    justify-content: space-between
-    width: 90%
-    flex-wrap: wrap
-
-.footer-item-phones-grid__phone-title
-    width: 30%
-
-.footer-item-phones-grid__phones
-    width: 70%
-
-.footer-item-phones__text
-    float: left
-    line-height: 1.7em
-
-.footer-item-phone__numbers
-    padding-left: 80px
-    line-height: 1.7em
-
-.footer-item__social
-    text-align: center
-    line-height: 1.7em
-
-.footer-item__social-icons
-    margin: 0 5px
-
-.footer-item__wrapper
-    line-height: 1.7em
-    margin-bottom: 25px
 
 .button__banner
     width: 287px
@@ -1220,3 +1135,42 @@ button
 
 .pagination__next, .pagination__prev
     width: 15%
+
+.footer-grid
+    display: flex
+    justify-content: space-between
+
+.footer-grid__info
+    width: 250px
+
+.footer-grid__nav
+    width: 260px
+
+.footer-info__item
+    margin-bottom: 5px
+    &:last-child
+        margin-bottom: 0
+
+.footer-info__main
+    margin-bottom: 20px
+
+.footer-info__conf
+    font-size: 15px
+
+.phone-flex
+    display: flex
+
+.phone-flex__left
+    margin-right: 10px
+
+.footer-nav
+    list-style: none
+
+
+.footer-nav
+    font-size: 15px
+
+.footer-nav__item
+    margin-bottom: 11px
+    &:last-child
+        margin-bottom: 0
