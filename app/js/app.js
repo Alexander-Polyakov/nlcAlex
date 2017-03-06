@@ -332,38 +332,37 @@
                 thisContent = thisItem.find(".js-accordion-content"),
                 tableScroll = thisContent.find('.table-scroll'),
                 jsScroll = tableScroll.find('.js-scroll'),
-                accordionAnimationDuration = 400;
+                delay = 400;
 
             if (thisItem.hasClass('open')) {
-                allContent.stop().slideUp(accordionAnimationDuration);
+                allContent.stop().slideUp(delay);
                 thisItem.removeClass("open");
                 console.log(accordion);
                 if(tableScroll.length > 0) {
                     setTimeout(function () {
                         jsScroll.data().jsp.destroy();
-                    }, accordionAnimationDuration);
+                    }, delay);
                 }
-
             } else {
-                allContent.stop().slideUp(accordionAnimationDuration);
-                thisContent.stop().slideDown(accordionAnimationDuration);
+                allContent.stop().slideUp(delay);
+                thisContent.stop().slideDown(delay);
                 allItems.removeClass("open");
                 thisItem.addClass("open");
+
+                setTimeout(function(){
+                    var itemOffsetTop = thisItem.offset().top;
+                    $('html, body').animate({
+                        scrollTop: itemOffsetTop
+                    }, 300);
+                },delay);
+
                 if(tableScroll .length > 0) {
                     setTimeout(function () {
                         tableScroll.css('height', thisContent.find('table').outerHeight());
                         jsScroll.jScrollPane({autoReinitialise: true});
-                    }, accordionAnimationDuration);
+                    }, delay);
                 }
             }
-        });
-        $('.js-accordion-item').click(function (e) {
-            var item = $(this);
-            setTimeout(function () {
-                $('html, body').animate({
-                    scrollTop: item.offset().top
-                }, 300);
-            }, 400);
         });
     });
 })();
