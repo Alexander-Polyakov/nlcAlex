@@ -1061,7 +1061,8 @@ button {
   justify-content: space-between;
   margin-bottom: -45px;
 }
-.news-grid .news-grid_blog {
+
+.news-grid_blog .news-grid__item {
   width: 100%;
   max-width: 100%;
   display: -ms-flexbox;
