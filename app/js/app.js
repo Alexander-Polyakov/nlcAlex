@@ -345,7 +345,7 @@
                 setTimeout(function () {
                     jsScroll.jScrollPane({autoReinitialise: true});
 
-                    var needHeight =  thisContent.find('table').outerHeight() + 20;
+                    var needHeight =  thisContent.find('table').outerHeight() + 15;
                     tableScroll.find(".jspContainer").css('height', needHeight);
                 }, delay);
             }
