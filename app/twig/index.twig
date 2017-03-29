@@ -24,7 +24,7 @@
                     <div class="main-slider__subtitle tab-fz20 mob-fz18">Столкнулись с медецинской проблемой или просто решили проверить свое здоровье?</div>
                     <div class="main-slider__text ">Наша компания специализируется в предоставленииполной информации <br>о возможностях и качестве обслуживания медицины в Южной Корее. <br>Мы не предоставляем Вам услуги, мы консультируем Вас.</div>
                     <div class="main-slider__button">
-                        <a href="#" class="button ">Отправить бесплатный запрос</a>
+                        <a href="#" class="button js-open-popup">Отправить бесплатный запрос</a>
                     </div>
                 </div>
             </div>
@@ -165,37 +165,17 @@
     <div class="section">
         <div class="container">
             <div class="section__title section__title_mb30px">
-                <div class="st-title fz50  ">Что о нас говорят</div>
+                <div class="st-title fz50">Что о нас говорят</div>
             </div>
             <div class="say-about owl-carousel">
-                <div class="say-about-grid">
-                    <div class="say-about-grid__item">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                    <div class="say-about-grid__item tab-display-none">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                    <div class="say-about-grid__item tab-display-none">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                    <div class="say-about-grid__item tab-display-none">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                </div>
-                <div class="say-about-grid">
-                    <div class="say-about-grid__item">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                    <div class="say-about-grid__item tab-display-none">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                    <div class="say-about-grid__item tab-display-none">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                    <div class="say-about-grid__item tab-display-none">
-                        <img class="say-about-grid__image" src="images/say-about-video.jpg">
-                    </div>
-                </div>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
+                <iframe class="say-about-grid__item" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -203,63 +183,68 @@
     <div class="section section_grey">
         <div class="container">
             <div class="section__title section__title_mb30px">
-                <div class="st-title fz50  ">Новости</div>
+                <div class="st-title fz50">Новости</div>
             </div>
-            <div class="news-grid">
-                <a href="#" class="news-grid__item news-item">
-                    <div class="news-item__image-wrap">
-                        <img class="news-item__image" src="images/news1.jpg">
-                    </div>
-                    <div class="news-item__desc news-item-desc">
-                        <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
-                        <div class="news-item-desc__date">30.12.2016</div>
-                    </div>
-                </a>
-                <a href="#" class="news-grid__item news-item">
-                    <div class="news-item__image-wrap">
-                        <img class="news-item__image" src="images/news2.jpg">
-                    </div>
-                    <div class="news-item__desc news-item-desc">
-                        <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
-                        <div class="news-item-desc__date">30.12.2016</div>
-                    </div>
-                </a>
-                <a href="#" class="news-grid__item news-item">
-                    <div class="news-item__image-wrap">
-                        <img class="news-item__image" src="images/news3.jpg">
-                    </div>
-                    <div class="news-item__desc news-item-desc">
-                        <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
-                        <div class="news-item-desc__date">30.12.2016</div>
-                    </div>
-                </a>
-                <a href="#" class="news-grid__item news-item">
-                    <div class="news-item__image-wrap">
-                        <img class="news-item__image" src="images/news4.jpg">
-                    </div>
-                    <div class="news-item__desc news-item-desc">
-                        <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
-                        <div class="news-item-desc__date">30.12.2016</div>
-                    </div>
-                </a>
+            <div class="section_news-wrap">
+                <div class="news-grid">
+                    <a href="#" class="news-grid__item news-item">
+                        <div class="news-item__image-wrap">
+                            <img class="news-item__image" src="images/news1.jpg">
+                        </div>
+                        <div class="news-item__desc news-item-desc">
+                            <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
+                            <div class="news-item-desc__date">30.12.2016</div>
+                        </div>
+                    </a>
+                    <a href="#" class="news-grid__item news-item">
+                        <div class="news-item__image-wrap">
+                            <img class="news-item__image" src="images/news2.jpg">
+                        </div>
+                        <div class="news-item__desc news-item-desc">
+                            <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
+                            <div class="news-item-desc__date">30.12.2016</div>
+                        </div>
+                    </a>
+                    <a href="#" class="news-grid__item news-item">
+                        <div class="news-item__image-wrap">
+                            <img class="news-item__image" src="images/news3.jpg">
+                        </div>
+                        <div class="news-item__desc news-item-desc">
+                            <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
+                            <div class="news-item-desc__date">30.12.2016</div>
+                        </div>
+                    </a>
+                    <a href="#" class="news-grid__item news-item">
+                        <div class="news-item__image-wrap">
+                            <img class="news-item__image" src="images/news4.jpg">
+                        </div>
+                        <div class="news-item__desc news-item-desc">
+                            <div class="news-item-desc__preview">Испанские ученые выяснили, что пальмовое масло провоцирует РАК. Оно используется в 90% кондитерских продуктов.</div>
+                            <div class="news-item-desc__date">30.12.2016</div>
+                        </div>
+                    </a>
+                </div>
             </div>
+            <p class="tac">
+                <a href="#" class="button">Все новости</a>
+            </p>
         </div>
     </div>
 
     <div class="section-form">
         <div class="section-form__container container">
             <div class="section-form__header">
-                <div class="section-form__title  ">Если есть вопрос, то задайте его нам</div>
+                <div class="section-form__title">Если есть вопрос, то задайте его нам</div>
                 <div class="section-form__descr">Наши консультанты проконсультируют Вас и ответят на все вопросы</div>
             </div>
             <form class="form-request">
                 <div class="form-request__line">
-                    <textarea class="st-textarea " placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
+                    <textarea class="st-textarea" placeholder="Ваш запрос, информация о заболевании (диагноз), любая формулировка"></textarea>
                 </div>
                 <div class="form-request__line">
                     <div class="form-request__inputs">
-                        <input class="form-request__input st-input " type="text" placeholder="ФИО">
-                        <input class="form-request__input st-input " type="text" placeholder="Контактный телефон или email">
+                        <input class="form-request__input st-input" type="text" placeholder="ФИО">
+                        <input class="form-request__input st-input" type="text" placeholder="Контактный телефон или email">
                     </div>
                 </div>
                 <div class="form-request__line">
@@ -268,11 +253,11 @@
                             <input class="st-checkbox__input" type="checkbox">
                             <div class="st-checkbox__checkbox"></div>
                         </div>
-                        <span class="st-label__text ">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</span>
+                        <span class="st-label__text">Отправляя запрос, я соглашаюсь на обработку своих персональных данных</span>
                     </label>
                 </div>
                 <p class="tac">
-                    <a href="#" class="button ">Отправить бесплатный запрос</a>
+                    <a href="#" class="button">Отправить бесплатный запрос</a>
                 </p>
             </form>
         </div>
@@ -281,7 +266,7 @@
     <div class="section section_grey">
         <div class="container">
             <div class="section__title">
-                <div class="st-title fz50  ">Часто задаваемые вопросы</div>
+                <div class="st-title fz50">Часто задаваемые вопросы</div>
             </div>
             <div class="faq-grid">
                 <div class="faq-grid__item faq-item">

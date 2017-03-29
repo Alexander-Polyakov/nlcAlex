@@ -140,14 +140,6 @@
     .owl-carousel
         padding: 0 100px
 
-    .say-about-grid
-        margin: 0
-
-    .say-about-grid__item
-        padding: 0
-        margin: 0
-        width: 100%
-
     .tab-display-none
         display: none
 
@@ -270,6 +262,38 @@
             display: none
 
 @media screen and (max-width: 767px)
+
+    .popup-feedback__title
+        font-size: 28px
+
+    .popup-feedback__descr
+        font-size: 16px
+
+    .main-menu
+        li
+            ul
+                padding-left: 0
+
+    .contacts-flex
+        justify-content: center
+
+    .contacts-flex__left
+        width: auto
+
+    .contacts-flex__right
+        width: auto
+
+    .say-about-grid
+        margin: 0
+
+    .say-about-grid__item
+        padding: 0
+        margin: 0
+        width: 100%
+        text-align: center
+        max-height: 320px
+        height: 100%
+
     .main-header__contacts
         display: none
 
@@ -731,6 +755,9 @@
     .section-item-grid__contacts
         width: 100%
 
+    .pagination
+        flex-wrap: wrap
+
     .pagination__items
         width: 100%
 
@@ -738,9 +765,9 @@
         border-right: none
         border-bottom: none
         border-top: none
-        border-left: 1px solid #cac9c9
-        &:last-child
-            border-right: 1px solid #cac9c9
+        border-right: 1px solid #cac9c9
+        &:nth-child(2)
+            border-left: 1px solid #cac9c9
 
     .pagination__prev
         width: 100%
