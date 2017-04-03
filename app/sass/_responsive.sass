@@ -22,6 +22,13 @@
 
 
 @media screen and (max-width: 991px)
+
+    .grid_diagnostic
+        .grid__item
+            width: calc(100% * (1/2) - 10px - 1px)
+            &:nth-child(2n+1)
+                margin-right: 15px
+
     .st-accordion
         table
             width: 1000px
@@ -667,6 +674,11 @@
         margin-bottom: 30px
 
 @media screen and (max-width: 600px)
+
+    .grid_diagnostic
+        .grid__item
+            width: 100%
+
     .st-content
         img.float-right
             width: 100%

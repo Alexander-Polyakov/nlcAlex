@@ -300,6 +300,15 @@
 
         var mobileCondition = null;
 
+        function tableOverflowAuto() {
+            var table = $("table"),
+                tableWrapper = '<div class="ova"></div>';
+
+            table.wrap(tableWrapper);
+        };
+
+        tableOverflowAuto();
+
         function sayAboutSliderTransform() {
             var allSlidesCount = $(".say-about-grid__item").length,
                 slides = $(".say-about-grid__item"),
