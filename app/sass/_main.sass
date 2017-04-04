@@ -1047,7 +1047,7 @@ button
             left: 0
 
 .section-item-grid__contacts
-    width: 30%
+    width: 350px
 
 .section-contacts
     color: #FFFFFF
@@ -1551,18 +1551,38 @@ button.accordion.active, button.accordion:hover
         margin-top: -2px
         position: absolute
 
+.popup-overlay
+    display: block
+    position: fixed
+    z-index: 200
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    -webkit-transition: all 0.6s ease 0s
+    -moz-transition: all 0.6s ease 0s
+    -ms-transition: all 0.6s ease 0s
+    -o-transition: all 0.6s ease 0s
+    transition: all 0.6s ease 0s
+    background-color: rgba(0, 0, 0, 0.6)
+    opacity: 0
+    visibility: hidden
+    &.opened
+        opacity: 1
+        visibility: visible
+
 .popup-feedback
     color: #ffffff
     visibility: hidden
     opacity: 0
-    position: absolute
+    position: fixed
     margin-top: 100px
     top: 50%
-    left: 49%
+    left: 50%
     z-index: 300
     max-width: 640px
-    width: 95%
-    transform: translate(-50%, -53%)
+    width: 90%
+    transform: translate(-50%, -50%)
     -webkit-transition: all 0.5s ease 0s
     -moz-transition: all 0.5s ease 0s
     -ms-transition: all 0.5s ease 0s
@@ -1680,3 +1700,42 @@ button.accordion.active, button.accordion:hover
 
 .ova
     overflow: auto
+
+
+.contacts-page__info
+    float: left
+    width: 30%
+
+.contacts-page__map
+    width: 65%
+    float: right
+
+.contacts-page__line
+    margin-bottom: 15px
+
+.contacts-page
+    .contacts-flex__left
+        width: 70px
+
+.iframe-container
+    position: relative
+    width: 100%
+    padding-bottom: 56.25%
+
+.iframe-container > iframe
+    display: block
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    margin: 0
+    padding: 0
+    width: 100%
+    height: 100%
+
+.clearfix
+    &:after
+        display: block
+        clear: both
+        content: ''

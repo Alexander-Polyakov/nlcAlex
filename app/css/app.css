@@ -1543,7 +1543,7 @@ button {
 }
 
 .section-item-grid__contacts {
-  width: 30%;
+  width: 350px;
 }
 
 .section-contacts {
@@ -2186,18 +2186,36 @@ button.accordion.active, button.accordion:hover {
   position: absolute;
 }
 
+.popup-overlay {
+  display: block;
+  position: fixed;
+  z-index: 200;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.6s ease 0s;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  visibility: hidden;
+}
+.popup-overlay.opened {
+  opacity: 1;
+  visibility: visible;
+}
+
 .popup-feedback {
   color: #ffffff;
   visibility: hidden;
   opacity: 0;
-  position: absolute;
+  position: fixed;
   margin-top: 100px;
   top: 50%;
-  left: 49%;
+  left: 50%;
   z-index: 300;
   max-width: 640px;
-  width: 95%;
-  transform: translate(-50%, -53%);
+  width: 90%;
+  transform: translate(-50%, -50%);
   transition: all 0.5s ease 0s;
   background-image: url("../images/form-request-bg1.jpg");
   padding: 30px;
@@ -2320,6 +2338,49 @@ button.accordion.active, button.accordion:hover {
   overflow: auto;
 }
 
+.contacts-page__info {
+  float: left;
+  width: 30%;
+}
+
+.contacts-page__map {
+  width: 65%;
+  float: right;
+}
+
+.contacts-page__line {
+  margin-bottom: 15px;
+}
+
+.contacts-page .contacts-flex__left {
+  width: 70px;
+}
+
+.iframe-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+}
+
+.iframe-container > iframe {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
 @media screen and (max-width: 1500px) {
   .main-slider .owl-prev {
     left: 20px !important;
@@ -2348,6 +2409,10 @@ button.accordion.active, button.accordion:hover {
   }
 }
 @media screen and (max-width: 991px) {
+  .section-contacts__link {
+    font-size: 25px;
+  }
+
   .grid_diagnostic .grid__item {
     width: calc(100% * (1/2) - 10px - 1px);
   }
@@ -2537,13 +2602,12 @@ button.accordion.active, button.accordion:hover {
   }
 
   .news-grid {
-    -ms-flex-pack: center;
-    justify-content: center;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .news-grid__item {
     width: 100%;
-    max-width: 500px;
   }
 
   .section {
@@ -2663,6 +2727,25 @@ button.accordion.active, button.accordion:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .footer-grid__nav {
+    display: none;
+  }
+
+  .contacts-page__info {
+    float: none;
+    width: 100%;
+  }
+
+  .contacts-page__map {
+    width: 100%;
+    float: none;
+  }
+
+  .contacts-page .contacts-flex {
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
   .popup-feedback__title {
     font-size: 28px;
   }
@@ -2888,28 +2971,6 @@ button.accordion.active, button.accordion:hover {
     margin: 0;
   }
 
-  .news-grid__item {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .news-item__desc {
-    padding-top: 10px;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .news-item__image-wrap {
-    position: relative;
-  }
-
   .social__title {
     font-family: "PT Sans Narrow Bold", sans-serif;
     font-size: 50px;
@@ -2970,10 +3031,6 @@ button.accordion.active, button.accordion:hover {
     flex-direction: column;
     -ms-flex-align: center;
     align-items: center;
-  }
-
-  .section-item-grid__contacts {
-    width: 50%;
   }
 
   .why-korea__content {
@@ -3060,28 +3117,6 @@ button.accordion.active, button.accordion:hover {
   .review-slider__photo {
     position: relative;
     margin: 0;
-  }
-
-  .news-grid__item {
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-align: center;
-    align-items: center;
-  }
-
-  .news-item__desc {
-    padding-top: 10px;
-    padding-left: 0;
-    text-align: center;
-  }
-
-  .news-item__image-wrap {
-    position: relative;
   }
 
   .faq-grid {
@@ -3176,7 +3211,12 @@ button.accordion.active, button.accordion:hover {
   }
 
   .section-item-grid__contacts {
-    width: 50%;
+    width: 300px;
+  }
+
+  .section-item-grid {
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
 
   .mission__content {
@@ -3323,10 +3363,6 @@ button.accordion.active, button.accordion:hover {
 
   .review-slider__date {
     padding-left: 10px;
-  }
-
-  .section-item-grid__contacts {
-    width: 100%;
   }
 
   .pagination {

@@ -1,0 +1,34 @@
+{% extends "layouts/app.twig" %}
+
+{% block pageTitle %} Контакты {% endblock %}
+
+{% block content %}
+<div class="section contacts-page">
+    <div class="container">
+        <h1 class="section__title">Адрес и контакты</h1>
+        <div class="contacts-page__info clearfix">
+            <p class="contacts-page__line">Головной офис: г. Алматы, ул. Немировича-данченко, д. 49</p>
+            <div class="contacts-page__line contacts-flex">
+                <div class="contacts-flex__left">Телефон:</div>
+                <div class="contacts-flex__right">
+                    <p><a href="tel:+7-777-000-07-89">+7-777-000-07-89</a></p>
+                    <p><a href="tel:+7-777-707-77-75">+7-777-707-77-75</a></p>
+                </div>
+            </div>
+            <div class="contacts-page__line contacts-flex">
+                <div class="contacts-flex__left">E-mail:</div>
+                <div class="contacts-flex__right">
+                    <p><a href="mailto:nlc.info.kz@gmail.com">nlc.info.kz@gmail.com</a></p>
+                    <p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="contacts-page__map clearfix">
+            <div class="iframe-container">
+                <iframe src="https://api-maps.yandex.ru/frame/v1/-/C6Q~iVlQ" width="560" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
