@@ -284,8 +284,9 @@
         $('.review-slider').owlCarousel({
             loop: true,
             items: 1,
-            autoplay: true,
+            // autoplay: true,
             autoplayTimeout: 5000,
+            autoHeight: true,
             responsive: {
                 0: {
                     nav: false,
