@@ -286,7 +286,7 @@
             items: 1,
             // autoplay: true,
             autoplayTimeout: 5000,
-            autoHeight: true,
+            // autoHeight: true,
             responsive: {
                 0: {
                     nav: false,
@@ -296,6 +296,23 @@
                     nav: true,
                     dots: false
                 }
+            }
+        });
+
+        $('.company-slider').owlCarousel({
+            loop: true,
+            items: 1,
+            autoHeight: true,
+            dots: 1,
+            mouseDrag: false,
+            responsive: {
+                0: {
+                    nav: false
+                },
+                767: {
+                    nav: true
+                }
+
             }
         });
 
@@ -436,5 +453,15 @@
                 }, delay);
             }
         });
+        (function() {
+            if (window.pluso)if (typeof window.pluso.start == "function") return;
+            if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+            }
+        })();
     });
 })();

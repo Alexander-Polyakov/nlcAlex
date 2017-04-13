@@ -280,7 +280,7 @@ button
         text-decoration: underline
 
 
-.main-slider, .owl-carousel
+.main-slider, .company-slider, .owl-carousel
     .owl-dots
         font-size: 0
         line-height: 0
@@ -306,7 +306,7 @@ button
             background-color: #1bb603
             border-color: #1bb603
 
-.main-slider
+.main-slider, .company-slider
     padding: 0 !important
     .owl-prev, .owl-next
         position: absolute
@@ -662,7 +662,12 @@ button
     text-align: center
     margin-bottom: 55px
 
+.review-slider
+    display: flex
+    align-items: center
+
 .review-slider__content
+    align-self: center
     position: relative
     padding-left: 200px
     min-height: 200px
@@ -1741,3 +1746,16 @@ button.accordion.active, button.accordion:hover
         display: block
         clear: both
         content: ''
+
+
+.company-slider__content
+    position: absolute
+    width: 100%
+    top: 0
+    left: 0
+    padding: 25px
+    text-align: center
+
+.company-slider__slide
+    width: 1170px
+    max-width: 578px
