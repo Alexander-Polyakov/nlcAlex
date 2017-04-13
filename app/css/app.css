@@ -621,6 +621,10 @@ button {
   background-color: #f6f6f6;
 }
 
+.section_pt_0 {
+  padding-top: 0;
+}
+
 .section_pb_0 {
   padding-bottom: 0;
 }

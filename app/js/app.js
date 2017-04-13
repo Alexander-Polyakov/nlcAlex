@@ -304,16 +304,8 @@
             items: 1,
             autoHeight: true,
             dots: 1,
+            nav: 1,
             mouseDrag: false,
-            responsive: {
-                0: {
-                    nav: false
-                },
-                767: {
-                    nav: true
-                }
-
-            }
         });
 
         var mobileCondition = null;
