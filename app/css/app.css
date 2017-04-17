@@ -515,10 +515,10 @@ button {
   border-color: #1bb603;
 }
 
-.main-slider, .company-slider {
+.main-slider {
   padding: 0 !important;
 }
-.main-slider .owl-prev, .main-slider .owl-next, .company-slider .owl-prev, .company-slider .owl-next {
+.main-slider .owl-prev, .main-slider .owl-next {
   position: absolute;
   background-image: url('../images/icons-s33b1ca0b62.png');
   background-position: 0 -61px;
@@ -536,10 +536,10 @@ button {
   font-size: 0;
   transition: all 0.5s ease 0s;
 }
-.main-slider .owl-prev:hover, .main-slider .owl-next:hover, .company-slider .owl-prev:hover, .company-slider .owl-next:hover {
+.main-slider .owl-prev:hover, .main-slider .owl-next:hover {
   opacity: 0.7;
 }
-.main-slider .owl-prev, .company-slider .owl-prev {
+.main-slider .owl-prev {
   background-image: url('../images/icons-s33b1ca0b62.png');
   background-position: 0 -61px;
   background-repeat: no-repeat;
@@ -556,7 +556,7 @@ button {
   left: 75px !important;
   margin-left: 0 !important;
 }
-.main-slider .owl-next, .company-slider .owl-next {
+.main-slider .owl-next {
   background-image: url('../images/icons-s33b1ca0b62.png');
   background-position: 0 -61px;
   background-repeat: no-repeat;
@@ -577,7 +577,7 @@ button {
   filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
   zoom: 1;
 }
-.main-slider .owl-dots, .company-slider .owl-dots {
+.main-slider .owl-dots {
   bottom: 20px;
 }
 
@@ -608,8 +608,8 @@ button {
 
 .main-slider__slide {
   position: relative;
+  height: 700px;
   background-size: cover;
-  background-position: center;
 }
 
 .section {
@@ -634,7 +634,11 @@ button {
 }
 
 .section_pt_25px {
-  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.section_pt_30px {
+  padding-top: 30px;
 }
 
 .section_pt40px {
@@ -2397,18 +2401,100 @@ button.accordion.active, button.accordion:hover {
   content: "";
 }
 
-.company-slider__content {
+.company-slider {
+  padding: 0 !important;
+}
+.company-slider .owl-prev, .company-slider .owl-next {
   position: absolute;
+  background-image: url('../images/icons-s33b1ca0b62.png');
+  background-position: 0 -61px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 119px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -59.5px;
+  margin-left: -20px;
+  font-size: 0;
+  transition: all 0.5s ease 0s;
+}
+.company-slider .owl-prev:hover, .company-slider .owl-next:hover {
+  opacity: 0.7;
+}
+.company-slider .owl-prev {
+  background-image: url('../images/icons-s33b1ca0b62.png');
+  background-position: 0 -61px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 119px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -59.5px;
+  margin-left: -20px;
+  left: 15px !important;
+  margin-left: 0 !important;
+}
+.company-slider .owl-next {
+  background-image: url('../images/icons-s33b1ca0b62.png');
+  background-position: 0 -61px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+  height: 119px;
+  width: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -59.5px;
+  margin-left: -20px;
+  left: auto !important;
+  margin-left: 0 !important;
+  right: 15px !important;
+  transform: rotate(180deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=$m11, M12=$m12,M21=$m21, M22=$m22, sizingMethod='auto expand');
+  zoom: 1;
+}
+.company-slider .owl-dots {
+  bottom: 20px;
+}
+
+.main-sider__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
-  top: 0;
-  left: 0;
+  height: 100%;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.company-slider__content {
+  position: relative;
   padding: 25px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 25px;
+  color: #464646;
+  font-size: 36px;
+  text-decoration: none;
+}
+.company-slider__content:hover {
+  text-decoration: underline;
 }
 
 .company-slider__slide {
-  width: 1170px;
-  max-width: 578px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
 }
 
 @media screen and (max-width: 1500px) {

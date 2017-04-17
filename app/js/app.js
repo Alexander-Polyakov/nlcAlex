@@ -305,7 +305,6 @@
             autoHeight: true,
             dots: 1,
             nav: 1,
-            mouseDrag: false,
         });
 
         var mobileCondition = null;

@@ -306,7 +306,7 @@ button
             background-color: #1bb603
             border-color: #1bb603
 
-.main-slider, .company-slider
+.main-slider
     padding: 0 !important
     .owl-prev, .owl-next
         position: absolute
@@ -351,9 +351,8 @@ button
 
 .main-slider__slide
     position: relative
-    -webkit-background-size: cover
+    height: 700px
     background-size: cover
-    background-position: center
 
 .section
     padding: 70px 0
@@ -372,7 +371,10 @@ button
     padding-top: 10px
 
 .section_pt_25px
-    padding-bottom: 25px
+    padding-top: 25px
+
+.section_pt_30px
+    padding-top: 30px
 
 .section_pt40px
     padding-top: 40px
@@ -1750,15 +1752,47 @@ button.accordion.active, button.accordion:hover
         clear: both
         content: ''
 
+.company-slider
+    padding: 0 !important
+    .owl-prev, .owl-next
+        position: absolute
+        +sprite(big-arrow, '', 'abs_middle')
+        font-size: 0
+        +trans()
+        &:hover
+            opacity: 0.7
+    .owl-prev
+        +sprite(big-arrow, '', 'abs_middle')
+        left: 15px !important
+        margin-left: 0 !important
+    .owl-next
+        +sprite(big-arrow, '', 'abs_middle')
+        left: auto !important
+        margin-left: 0 !important
+        right: 15px !important
+        +rotate(180)
+    .owl-dots
+        bottom: 20px
+
+.main-sider__container
+    display: flex
+    align-items: center
+    width: 100%
+    height: 100%
+    justify-content: center
 
 .company-slider__content
-    position: absolute
-    width: 100%
-    top: 0
-    left: 0
+    position: relative
     padding: 25px
-    text-align: center
+    background: rgba(#ffffff, 0.7)
+    border-radius: 25px
+    color: #464646
+    font-size: 36px
+    text-decoration: none
+    &:hover
+        text-decoration: underline
 
 .company-slider__slide
-    width: 1170px
-    max-width: 578px
+    position: relative
+    background-size: cover
+    background-position: center
