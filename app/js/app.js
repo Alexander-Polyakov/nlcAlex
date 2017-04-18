@@ -302,7 +302,7 @@
         $('.company-slider').owlCarousel({
             loop: true,
             items: 1,
-            autoHeight: true,
+            autoHeight: 1,
             dots: 1,
             nav: 1,
         });

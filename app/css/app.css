@@ -606,10 +606,12 @@ button {
   margin-bottom: 25px;
 }
 
-.main-slider__slide {
+.main-slider__slide_wrap {
   position: relative;
-  height: 700px;
-  background-size: cover;
+}
+
+.main-slder__company-slide {
+  position: relative;
 }
 
 .section {
@@ -1970,7 +1972,7 @@ button.accordion.active, button.accordion:hover {
   flex-wrap: wrap;
 }
 .grid_diagnostic .grid__item {
-  width: calc(100% * (1/4) - 10px - 1px);
+  width: calc(100% * (1 / 4) - 10px - 1px);
   -ms-flex-positive: 1;
   flex-grow: 1;
   margin-bottom: 15px;
@@ -2402,6 +2404,9 @@ button.accordion.active, button.accordion:hover {
 }
 
 .company-slider {
+  max-height: 700px;
+  text-align: center;
+  width: 100%;
   padding: 0 !important;
 }
 .company-slider .owl-prev, .company-slider .owl-next {
@@ -2467,34 +2472,43 @@ button.accordion.active, button.accordion:hover {
   bottom: 20px;
 }
 
-.main-sider__container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
+.company-slider__slide {
   width: 100%;
+  max-height: 700px;
+}
+
+.company-slider__image {
+  position: relative;
+  margin: 0 auto;
   height: 100%;
-  -ms-flex-pack: center;
-  justify-content: center;
+  object-fit: cover;
+  width: 100%;
+}
+
+.company-sider__container {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  margin-left: 0;
+  text-decoration: none;
+  transform: translateY(-50%);
 }
 
 .company-slider__content {
+  margin: 0 auto;
   position: relative;
-  padding: 25px;
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 25px;
-  color: #464646;
   font-size: 36px;
+  padding: 25px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 15px;
+  transition: all 0.2s ease;
+  cursor: pointer;
   text-decoration: none;
 }
 .company-slider__content:hover {
-  text-decoration: underline;
-}
-
-.company-slider__slide {
-  position: relative;
-  background-size: cover;
-  background-position: center;
+  box-shadow: 0 0 10px -1px #000;
 }
 
 @media screen and (max-width: 1500px) {
@@ -2843,6 +2857,22 @@ button.accordion.active, button.accordion:hover {
   }
 }
 @media screen and (max-width: 767px) {
+  .section_pt_0 {
+    padding-top: 0;
+  }
+
+  .section_pb_0 {
+    padding-bottom: 0;
+  }
+
+  .company-slider__content {
+    font-size: 24px;
+  }
+
+  .company-slider__slide {
+    height: 300px;
+  }
+
   .footer-grid__nav {
     display: none;
   }
